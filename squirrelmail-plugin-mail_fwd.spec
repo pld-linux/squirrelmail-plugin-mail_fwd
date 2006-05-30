@@ -21,12 +21,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_sysconfdir	/etc/webapps/squirrelmail
 
 %description
-This plug-in allows to set email forwarding. Note: binary file
-included in this package must be suid.
+This plug-in allows to set email forwarding.
+
+Warning: this package contains file with suid bit set!
 
 %description -l pl
-Ta wtyczka pozwala na ustawienie przekierowania poczty. Uwaga: plik
-binarny zawarty w tym pakiecie musi mieæ ustawiony bit suid.
+Ta wtyczka pozwala na ustawienie przekierowania poczty.
+
+Uwaga: ten pakiet zawiera plik z ustawionym bitem suid!
 
 %prep
 %setup -q -n %{_plugin}
@@ -56,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(640,root,http) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{_plugin}_config.php
-%attr(755,root,root) %{_sbindir}/wfwd
+%attr(4755,root,root) %{_sbindir}/wfwd
 %dir %{_plugindir}
 %{_plugindir}/*.php
