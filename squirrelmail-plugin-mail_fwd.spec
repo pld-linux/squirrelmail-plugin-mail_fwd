@@ -4,14 +4,14 @@ Summary:	A squirrel email forwarding plug-in
 Summary(pl):	Wtyczka umo¿liwiaj±ca przekierowanie poczty
 Name:		squirrelmail-plugin-%{_plugin}
 Version:	0.4.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://www.squirrelmail.org/plugins/%{_plugin}.%{version}-%{mversion}.tar.gz
 # Source0-md5:	472bfb19e60d865b7aa363f3ea0293c2
 Patch0:		%{name}-Makefile.patch
 URL:		http://www.squirrelmail.org/plugin_view.php?id=16
-Requires:	php-ftp
+Requires:	php(ftp)
 Requires:	squirrelmail >= 1.4.6-2
 Requires:	squirrelmail-compatibility-2.0.4
 Obsoletes:	squirrelmail-mail_fwd
