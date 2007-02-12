@@ -1,7 +1,7 @@
 %define		_plugin	mail_fwd
 %define		mversion	1.4.0
 Summary:	A squirrel email forwarding plug-in
-Summary(pl):	Wtyczka umo¿liwiaj±ca przekierowanie poczty
+Summary(pl.UTF-8):   Wtyczka umoÅ¼liwiajÄ…ca przekierowanie poczty
 Name:		squirrelmail-plugin-%{_plugin}
 Version:	0.4.1
 Release:	2
@@ -25,7 +25,7 @@ This plug-in allows to set email forwarding.
 
 Warning: this package contains file with suid bit set!
 
-%description -l pl
+%description -l pl.UTF-8
 Ta wtyczka pozwala na ustawienie przekierowania poczty.
 
 Uwaga: ten pakiet zawiera plik z ustawionym bitem suid!
