@@ -32,7 +32,7 @@ Uwaga: ten pakiet zawiera plik z ustawionym bitem suid!
 
 %prep
 %setup -q -n %{_plugin}
-%patch0 -p0
+%patch -P0 -p0
 
 rm -f fwdfile/wfwd.o
 
